@@ -1,19 +1,29 @@
 ﻿using System;
-namespace MyFirstConsoleApp
+class vechile
 {
-    class Program
+    string Brand_Name;
+    public void Quality()
     {
-        static void Main(string[] args)
-        {
-            int mynum = 25;
-            float myfloat = 5.2f;
-            bool mybool = true;
-            Console.WriteLine(Convert.ToString(mynum));
-            Console.WriteLine(Convert.ToInt32(myfloat));
-            Console.WriteLine(Convert.ToDouble(myfloat));
-            Console.WriteLine(Convert.ToInt32(mybool));
-        }
+        Console.WriteLine("Quality is so good");
+    }
+    public void Price(int x)
+    {
+        Console.WriteLine("The price of the Vechile is" + "" + "" + x);
+    }
+    public void Customer_Support(string name)
+    {
+        Console.WriteLine("Customer support is " + "" + name);
+    }
+    static void Main()
+    {
+        vechile v = new vechile();
+        v.Brand_Name = "Harley Davidson";
+        v.Quality();
+        v.Price(120000);
+        v.Customer_Support("Excellent");
+        Console.WriteLine(v.Brand_Name = "Harley Davidson");
+        Console.ReadLine();
+
+
     }
 }
-
-
